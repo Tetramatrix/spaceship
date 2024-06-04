@@ -1,0 +1,200 @@
+#include "allincludes.h"
+
+Game::Game() : Main()
+{   
+    engine = new Engine();
+    player = new Spaceship(engine);    
+    highscore[0] = new Highscore("data/highscore.txt");    
+    
+    //engine->snd->loadWav(0, "data/wav/vollkorrektertrance.wav");    
+    //engine->snd->loadWav(0, "data/wav/rtype2.wav");    
+    engine->snd->loadWav(0, "data/wav/cosmicpirates2.wav");    
+    engine->snd->loadWav(1, "data/wav/fire_bolt_micro.wav");  
+    engine->snd->loadWav(2, "data/wav/detonation_ball02.wav");
+    engine->snd->loadWav(3, "data/wav/ExplosionShip1.wav");
+    //engine->snd->loadWav(4, "data/wav/rtype1.wav");
+    engine->snd->loadWav(4, "data/wav/commando.wav");
+    engine->snd->loadWav(5, "data/wav/WeaponDepletedUraniumCannon.wav");
+    engine->snd->loadWav(6, "data/wav/ShieldsHit1.wav");
+        
+    engine->snd->playStatic(0, 0, true, 1);
+    
+    glutSetCursor(GLUT_CURSOR_NONE);
+}
+
+/*****************************************************************************
+ * Main Keyboard Callbacks
+ *****************************************************************************/
+void Game::keyboardSpecial(int key, int state)
+{
+  keys[key] = state; 
+}
+
+void Game::keyboard(unsigned char key, int state)
+{    
+    keys[key] = state;
+
+    if (keys[(unsigned char)'s'] == 1) {
+        skipIntro();
+    }
+    if (keys[(unsigned char)'h'] == 1) {
+        player->showHighscore = true;
+    }
+}
+
+/*****************************************************************************
+ * Game
+ *****************************************************************************/
+
+void Game::update()
+{
+    // update status
+}
+
+void Game::display()
+{
+ 
+    displayStars(screenWidth, screenHeight);
+    farbpfeile->display(screenWidth, screenHeight);
+    
+    if (intro && !player->showHighscore) {
+        
+        scroller(screenWidth, screenHeight);
+        farbbalken->displaySC(screenWidth, screenHeight);        
+        wobblerImg[0]->display(screenWidth, screenHeight,image[0],wobblerImg);
+        char buf[256];
+        sprintf(buf, "Press 's' to start the game.");
+        afPrintAt(screenWidth/2-12*8, screenHeight/2+10, buf);
+    
+    } else if (intro && player->showHighscore) {
+        
+        scroller(screenWidth, screenHeight);
+        farbbalken->displaySC(screenWidth, screenHeight);        
+        wobblerImg[0]->display(screenWidth, screenHeight,image[0],wobblerImg);    
+        highscore[0]->showHighscore();
+    
+    } else {           
+        
+        if (!player->gameOver) {
+            
+            alienControl();
+            playerControl();    
+            engine->display(player, screenWidth, screenHeight);
+            player->timer();
+            player->displayStats(screenWidth, screenHeight);
+            
+        } else {
+                
+            engine->update();
+            player->displayStats(screenWidth, screenHeight);            
+            
+            sprintf(buf, "Game Over");
+            afPrintAt(screenWidth/2-4*8, screenHeight/2+50, buf);
+         
+            sprintf(buf, "---------");
+            afPrintAt(screenWidth/2-4*8, screenHeight/2+40, buf);
+
+            sprintf(buf, "Statistic:");
+            afPrintAt(screenWidth/2-4*8, screenHeight/2+20, buf);
+            
+            sprintf(buf, "Score: %d", player->score);
+            afPrintAt(screenWidth/2-3*8, screenHeight/2-10, buf);
+            
+            sprintf(buf, "Shots fired: %d", player->shotCount);
+            afPrintAt(screenWidth/2-9*8, screenHeight/2-20, buf);
+            
+            sprintf(buf, "Aliens killed: %d", player->alienDestroyed);
+            afPrintAt(screenWidth/2-11*8, screenHeight/2-30, buf);
+            
+            sprintf(buf, "Total Aliens: %d", player->alienCount);
+            afPrintAt(screenWidth/2-10*8, screenHeight/2-40, buf);
+            
+            int x = 0;
+            if (player->shotCount > 0 ) { 
+                x = player->alienDestroyed*500/player->shotCount;
+            } 
+            sprintf(buf, "Accuracy: %d", x);
+            afPrintAt(screenWidth/2-6*8, screenHeight/2-50, buf);
+            
+            if (!player->highscoreDone) {
+                player->highscoreDone = true;
+                highscore[0]->makeHighscore(11, player->score, player->shotCount, player->alienDestroyed, player->alienCount, x);
+            }            
+        }    
+    }
+    
+    farbbalken->displayBalken(screenWidth, screenHeight);
+}
+
+
+void Game::playerControl()
+{
+    engine->update();
+    player->update();
+    
+    // get steering input
+    
+    if (keys[(unsigned char)' '] == 1) {
+        player->fire(engine);
+    }
+
+    if (GetKeyState(VK_UP) & 0x80) {
+        player->up();        
+    }
+    
+    if (GetKeyState(VK_DOWN) & 0x80) {
+        player->down();
+    }
+    
+    if (GetKeyState(VK_RIGHT) & 0x80) {
+        player->accelerate();
+    }
+    
+    if (GetKeyState(VK_LEFT) & 0x80) {
+        player->brake();
+    }
+    
+    engine->snd->setSourcePos(1, player->listenerPos);
+    //engine->snd->setPitch(0, 0.2+player->speed/2);
+    engine->snd->setPitch(1, 0.2);
+}
+
+void Game::alienControl()
+{
+    int r[] = {0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int reg = r[rand()%30];
+    if (reg == 1) {  
+        int sW = screenWidth + rand()%screenWidth + 40;
+        int sH = rand()%(screenHeight-150) + 72;
+        int speed = rand()%4+2;
+        int spriteNr = rand()%2;
+        new Sprite(engine, sW, sH, speed, spriteNr);
+        if (spriteNr == 0) {
+            player->regAlien();
+        }
+    }    
+}
+
+void Game::skipIntro() {
+    if (player->gameOver) {
+        resetGame();
+        intro = false;
+    } else if (intro) {
+        engine->snd->stopPlay(0);
+        engine->snd->playStatic(0, 4, true, 1);
+        intro = false;
+        player->showHighscore = false;
+    }
+}
+void Game::setPause() {
+    engine->snd->stopPlay(0);
+    engine->snd->playStatic(0, 0, true, 1);    
+    intro = true;
+    player->showHighscore = false;
+}
+void Game::resetGame() {      
+    engine->resetEngine();
+    player->resetPlayer();
+    resetScroller();
+    intro = true;
+}

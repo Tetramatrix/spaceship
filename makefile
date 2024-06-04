@@ -1,0 +1,26 @@
+OBJECTS=\
+main\
+game\
+
+include Config.mak
+CFLAGS+= -Iengine
+
+ifeq ($(HAVE_OPENAL),1)
+	CFLAGS+=  -Iwin32/openal/include
+endif
+
+PRG=Spaceship
+
+$(PRG): $(OFILES)  util/util.lib engine/engine.lib 
+	g++ -o $(PRG) $(OFILES) util/util.lib engine/engine.lib $(LIBS)
+	
+
+util/util.lib: util/*.cc util/*.h
+	cd util && make
+
+engine/engine.lib: engine/*.cc engine/*.h
+	cd engine && make
+
+
+%.o: %.cc $(HFILES) Makefile
+	g++ $(CFLAGS) -o $*.o -c $*.cc
