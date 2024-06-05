@@ -1,21 +1,18 @@
 OBJECTS=\
-targa\
-fileio\
-atarifnt\
-fastmath\
-logo\
-util\
-farbbalken\
-farbpfeile\
-highscore\
+engine\
+spaceship\
+sound\
+shot\
+sprite\
+explosion\
 
 
 include ../Config.mak
 
-THISLIB=util.lib
+THISLIB=engine.lib
 
 $(THISLIB): $(OFILES)
-	$(ar) rcs $(THISLIB) $(OFILES)
+	ar rcs $(THISLIB) $(OFILES)
 
 clean:
 	rm -f *~ *.o $(THISLIB)

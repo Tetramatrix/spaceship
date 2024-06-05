@@ -14,8 +14,8 @@ class Farbbalken
  
     Farbbalken();
  
-    void displayBalken(int screenWidth, int screenHeight);
-    void displaySC(int screenWidth, int screenHeight);
+    void Farbbalken::displayBalken(int screenWidth, int screenHeight);
+    void Farbbalken::displaySC(int screenWidth, int screenHeight);
  
 };
 

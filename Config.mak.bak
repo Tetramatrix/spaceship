@@ -1,6 +1,6 @@
 CFLAGS=-Wall
 
-CC=i686-w64-mingw32-g++
+CC=i686-w64-mingw32-g++-win32
 ar=i686-w64-mingw32-ar
 
 #CC=g++

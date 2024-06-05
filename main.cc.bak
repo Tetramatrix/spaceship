@@ -198,8 +198,8 @@ int main(int argc, char* argv[])
 		*/
 
     // List all available display settings
-    // printf("Available display settings:\n");
-    // listDisplaySettings();
+    printf("Available display settings:\n");
+    listDisplaySettings();
     
     // Change Screen Resolution to 800x600x32
     DEVMODE s1;

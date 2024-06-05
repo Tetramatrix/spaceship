@@ -9,6 +9,7 @@
 #endif
 
 #include <GL/glut.h>
+#include <GL/glext.h>
 
 
 #include "util/allincludes.h"

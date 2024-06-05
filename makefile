@@ -12,7 +12,7 @@ endif
 PRG=Spaceship
 
 $(PRG): $(OFILES)  util/util.lib engine/engine.lib 
-	g++ -o $(PRG) $(OFILES) util/util.lib engine/engine.lib $(LIBS)
+	$(CC) -o $(PRG) $(OFILES) util/util.lib engine/engine.lib $(LIBS)
 	
 
 util/util.lib: util/*.cc util/*.h
@@ -23,4 +23,10 @@ engine/engine.lib: engine/*.cc engine/*.h
 
 
 %.o: %.cc $(HFILES) Makefile
-	g++ $(CFLAGS) -o $*.o -c $*.cc
+	$(CC) $(CFLAGS) -o $*.o -c $*.cc
+	
+	
+clean:
+	rm -f *~ *.o $(THISLIB)
+	cd engine && make clean
+	cd util && make clean
