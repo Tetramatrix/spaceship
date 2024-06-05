@@ -1,4 +1,5 @@
 #include "allincludes.h"
+#include <GL/glext.h>
 
 Farbbalken::Farbbalken() {
 

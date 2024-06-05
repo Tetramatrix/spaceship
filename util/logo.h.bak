@@ -8,15 +8,13 @@ class Logo
      unsigned int * img;
      unsigned int * pointer;
      TargaFile * image; 
-     
+     Logo * wobbler[];
  
      int width, height;
      float wobblePos;
  
      Logo(int width, int scanline, unsigned int * pointer);
-     void display(int screenWidth, int screenHeight, TargaFile * image, Logo * wobbler[]);
-     	
-     Logo * wobbler[];
+     void Logo::display(int screenWidth, int screenHeight, TargaFile * image, Logo * wobbler[]);
 };
 
 #endif
