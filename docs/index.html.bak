@@ -9,6 +9,7 @@
 <img src="start.png" width="320" /><br /><br />
 <img src="game.png" width="320" /><br /><br />
 
+<p style="width:400px">Story: In the future the aliens are about to conquer the earth. you are a skilled spaceship pilot and the last hope of mankind. explore the asteroidbelt between mars and jupiter and destroy all the aliens. try to avoid the asteroids they can destroy your spaceship. you have only one minute.</p>
 Game Download:
 
 <ul>
@@ -26,7 +27,7 @@ Installation Instructions:
 
 Changelog:
 <ul>
-	<li>08.06.24 Updated: Win 11 compatibility</li>
+	<li>08.06.24 Bugfix Win 11 compatibility</li>
 </ul>
 </body>
 </html>
