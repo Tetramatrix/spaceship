@@ -1,8 +1,30 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Game</title>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
-     crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Spaceship OpenGL Game</title>
+
+	<meta name="google-site-verification" content="pETgPUZdQjRlsCKUIPsVusPSGZtduaNKm09OOk69Oec" />
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
+	     crossorigin="anonymous"></script>
+	 <style>
+	    body {
+	        background-color: #121212;
+	        color: #ffffff;
+	        text-align: center;
+	        font-family: Arial, sans-serif;
+	    }
+	    h1 {
+	        margin-top: 20px;
+	    }
+	    .content {
+	        display: inline-block;
+	        max-width: 600px;
+	        text-align: left;
+	    }
+	</style>
 </head>
 <body>
 	
