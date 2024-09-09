@@ -20,7 +20,7 @@
 	        margin-top: 20px;
 	    }
 	    p {
-	    	width:400px;
+	    	width: 400px;
 	    }
 	    .content {
 	        display: inline-block;
