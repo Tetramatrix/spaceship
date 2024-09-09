@@ -37,6 +37,16 @@
 		<img src="game.png" width="320" /><br /><br />
 
 		<p style="width:400px">In the future the aliens are about to conquer the earth. You are a skilled spaceship pilot and the last hope of mankind. Explore the asteroid belt between mars and jupiter and destroy all the aliens. Try to avoid the asteroids they can destroy your spaceship. You have only one minute.</p>
+
+
+		<ul>
+			<li>GFX: Atari ST/Custom</li>
+			<li>Font: Atari ST</li>
+			<li>Music: Atari ST Chiptune</li>
+			<li>FX: Atari ST/Custom</li>
+		</ul>
+
+
 		Game Download:
 
 		<ul>
@@ -51,15 +61,19 @@
 		<li>Install OpenAL (included in the archive).</li>
 		<li>Run the .exe file to start the game.</li>
 		</ul>
+		
 
-		Changelog:
+		
+		56 Sprites! Atari ST Demo
 		<ul>
-			<li>08.06.24 Bugfix Win 11 compatibility</li>
+			<li><a href="https://tetramatrix.github.io/typo3dreid/">56 Sprites! Atari ST Demo</a></li>
 		</ul>
 		
-		56 Sprites Atari ST Demo
+		
+		
+				Changelog:
 		<ul>
-			<li><a href="https://tetramatrix.github.io/typo3dreid/">56 Sprites Atari ST Demo</a></li>
+			<li>08.06.24 Bugfix Win 11 compatibility</li>
 		</ul>
 	</div>
 </body>
