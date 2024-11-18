@@ -41,7 +41,18 @@
 		<img src="game2.jpg" width="320" /><br /><br />
 		<img src="game3.jpg" width="320" /><br /><br />
 		
-		<p>In the future the aliens are about to conquer the earth. You are a skilled spaceship pilot and the last hope of mankind. Explore the asteroid belt between mars and jupiter and destroy all the aliens. Try to avoid the asteroids they can destroy your spaceship. You have only one minute.</p>
+		<p><strong>Attention all pilots!</strong> The future of Earth is at stake. Aliens are on the brink of conquering our planet, and humanity’s survival rests in your hands. As a skilled spaceship pilot, you are our last hope.
+		</p>
+		<p>Your mission:
+		</p>
+		<ul><li>Navigate the treacherous asteroid belt between Mars and Jupiter.
+		</li><li>Eliminate all alien threats you encounter.
+		</li><li>Avoid collisions with asteroids&mdash;your spaceship cannot withstand the impact.
+		</li></ul>
+		<p>Remember, time is critical. You have only <strong>one hour</strong>&nbsp;to save mankind.
+		</p>
+		<p>Good luck, hero. The fate of Earth depends on you!
+		</p>
 
 		<ul>
 			<li>GFX: Atari ST/Custom</li>
@@ -50,7 +61,7 @@
 			<li>FX: Atari ST/Custom</li>
 		</ul>
 
-	<iframe width="347" height="195" src="https://www.youtube.com/embed/WzOCR7VuO5g" title="Old-School Retro Arcade Spaceship update game &amp; gfx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<iframe width="347" height="195" src="https://www.youtube.com/embed/WzOCR7VuO5g" title="Old-School Retro Arcade Spaceship update game &amp; gfx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 		<p>In developing this application, I utilized a toolkit consisting of Win XP, Cygwin 32-Bit (for development environment setup), OpenGL, OpenAL, and implemented the application using C++. This allowed me to develop the application to run on PC, Mac, and Linux platforms. One of the main challenges during the development process was incorporating elements from Atari ST, which required additional research and implementation. Through this process, I have learned valuable lessons about cross-platform development, integration of legacy technologies, and ensuring compatibility across different operating systems.</p>
 		
