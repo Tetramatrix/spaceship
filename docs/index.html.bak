@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Old-School Retro Arcade Spaceship</title>
+	<title>Spaceship</title>
 
 	<meta name="google-site-verification" content="pETgPUZdQjRlsCKUIPsVusPSGZtduaNKm09OOk69Oec" />
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
@@ -106,8 +106,9 @@
 		
 
 		
-				Changelog:
+				Devlog:
 		<ul>
+			<li>21.01.25 Medium update: Bugfixes, new enemy, new weapons & bullet patterns</li>
 			<li>11.10.24 Major update game & gfx</li>
 			<li>08.06.24 Bugfix Win 11 compatibility</li>
 		</ul>
