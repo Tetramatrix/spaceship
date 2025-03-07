@@ -4,56 +4,122 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>-=[ Spaceship ]=- </title>
+	<title>-=[ Old-school retro arcade 2d shmups game: Spaceship ]=- </title>
 
 	<meta name="google-site-verification" content="pETgPUZdQjRlsCKUIPsVusPSGZtduaNKm09OOk69Oec" />
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
 	     crossorigin="anonymous"></script>
 	 <style>
-	    body {
-	        background-color: #121212;
-	        color: #ffffff;
-	        text-align: center;
-	        font-family: Arial, sans-serif;
-	    }
-	    h1 {
-	        margin-top: 20px;
-	    }
-	    p {
-	    	width: 400px;
-	    }
-	    .content {
-	        display: inline-block;
-	        max-width: 600px;
-	        text-align: left;
-	    }
-      a {
-          color: #00ff00;
-      }
+			body {
+			    background-image: url('burningship.png');
+			    background-color: #121212;
+			    color: #00ff99; /* Neon green text color */
+			    font-family: 'Orbitron', Arial, sans-serif;
+			    font-size: 21px;
+			    line-height: 1.6;
+			    text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 15px #00ff99;
+			    padding: 20px;
+			    text-align: center;
+			    margin: 0;
+			}
+
+			h1 {
+			    margin-top: 20px;
+			    font-size: 36px;
+			    color: #ff007f; /* Bright pink for titles */
+			    text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f;
+			}
+
+			p {
+			    width: 400px;
+			    margin: 0 auto;
+			    color: #93fc00; /* Alternate neon color for differentiation */
+			    text-align: left;
+			}
+
+			.content {
+ 					display: inline-block;; /* Force it to take full width */
+    			text-align: left; /* Keep everything left-aligned */
+    			margin: 0 auto; /* Optional: This will center the whole box horizontally */
+			    max-width: 700px;
+			    text-align: left;
+			    color: #93fc00;
+			    border-radius: 10px;
+			    padding: 20px;
+			    background: rgba(18, 18, 18, 0.8); /* Semi-transparent background */
+			    box-shadow: 0 0 20px rgba(0, 255, 153, 0.5);
+			}
+
+			a {
+			    color: #00ff00;
+			    text-decoration: none;
+			    position: relative;
+			    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+			}
+
+			a:hover {
+			    color: #ffffff;
+			    transform: scale(1.05);
+			    text-shadow: 0 0 8px #00ff00, 0 0 16px #00ff00, 0 0 24px #00ff00;
+			}
+
+			@keyframes neon-glow {
+			    0%, 100% {
+			        text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 15px #00ff99;
+			    }
+			    50% {
+			        text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 30px #00ff99;
+			    }
+			}
+
+			h1, p {
+			    animation: neon-glow 1.5s infinite alternate;
+			}
+			
+			.fig {
+			    font-size: 10pt;
+			    font-family: Monospace;
+			    white-space: pre;
+			}
 	</style>
 </head>
 <body>
   <div class="content">	
-		<h1>-=[ Spaceship ]=- </h1>
-
-    Old-school retro arcade 2d shmups game: Spaceship
-		<img src="start.jpg" width="320" /><br /><br />
-		<img src="game1.jpg" width="320" /><br /><br />
-		<img src="game2.jpg" width="320" /><br /><br />
-		<img src="game3.jpg" width="320" /><br /><br />
+	
+		<pre class="fig" style="float:left;text-align:left;margin:0px;padding:0px">		
+		  _________                                .__    .__        
+		 /   _____/__________    ____  ____   _____|  |__ |__|_____  
+		 \_____  \\____ \__  \ _/ ___\/ __ \ /  ___/  |  \|  \____ \ 
+		 /        \  |_> > __ \\  \__\  ___/ \___ \|   Y  \  |  |_> >
+		/_______  /   __(____  /\___  >___  >____  >___|  /__|   __/ 
+		        \/|__|       \/     \/    \/     \/     \/   |__|    
+		</pre>
 		
-		<p><strong>Attention all pilots!</strong> The future of Earth is at stake. Aliens are on the brink of conquering our planet, and humanity’s survival rests in your hands. As a skilled spaceship pilot, you are our last hope.
-		</p>
-		<p>Your mission:
-		</p>
-		<ul><li>Navigate the treacherous asteroid belt between Mars and Jupiter.
-		</li><li>Eliminate all alien threats you encounter.
-		</li><li>Avoid collisions with asteroids&mdash;your spaceship cannot withstand the impact.
-		</li></ul>
-		<p>Remember, time is critical. You have only <strong>one hour</strong>&nbsp;to save mankind.
-		</p>
-		<p>Good luck, hero. The fate of Earth depends on you!
-		</p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+       <br />
+    Old-school retro arcade 2d shmups game: Spaceship
+                                      
+    
+	
+   	<img src="start.jpg" width="320" />
+   	<img src="game2.jpg" width="320" /><br />
+   	
+		<strong>Attention all pilots!</strong> The future of Earth is at stake. Aliens are on the brink of conquering our planet, and 			humanity’s survival rests in your hands. As a skilled spaceship pilot, you are our last hope.<br />
+		
+		Your mission:
+			<ul><li>Navigate the treacherous asteroid belt between Mars and Jupiter.
+			</li><li>Eliminate all alien threats you encounter.
+			</li><li>Avoid collisions with asteroids&mdash;your spaceship cannot withstand the impact.
+			</li></ul>
+				
+		Remember, time is critical. You have only <strong>one hour</strong>&nbsp;to save mankind.<br />
+		Good luck, hero. The fate of Earth depends on you!
+		
 
 		<ul>
 			<li>GFX: Atari ST/Custom</li>
@@ -63,38 +129,11 @@
 		</ul>
 
 		<iframe width="347" height="195" src="https://www.youtube.com/embed/p4ric9f7EG8" title="Spaceship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-		<p>In developing this application, I utilized a toolkit consisting of Win XP, Cygwin 32-Bit (for development environment setup), OpenGL, OpenAL, and implemented the application using C++. This allowed me to develop the application to run on PC, Mac, and Linux platforms. One of the main challenges during the development process was incorporating elements from Atari ST, which required additional research and implementation. Through this process, I have learned valuable lessons about cross-platform development, integration of legacy technologies, and ensuring compatibility across different operating systems.</p>
 		
-		Game Download:<br>
-
-		Latest:
-		<ul>
-			<li><a href="Demo.7z">Download for Windows 11</a></li>
-		</ul>
+		<br />
+		<br />
 		
-		Previous:
-		<ul>
-		<li><a href="Old_Demo.7z">Download for Windows 11</a></li>
-		<li><a href="Demo_WinXP.rar">Download for Windows XP</a></li>
-		</ul>
-
-		Itch.io
-		<ul>
-			<li><a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">Link</a></li>
-		</ul>
-
-	  Read.Cash
-		<ul>
-			<li><a href="https://read.cash/@Gigamegs/simple-old-school-retro-opengl-side-scroller-shmup-0a184b7d">Link</a></li>
-		</ul>
-		
-				
-		Game Jolt
-		<ul>
-			<li><a href="https://gamejolt.com/p/in-the-future-the-aliens-are-about-to-conquer-the-earth-you-are-a-k4wf6tdq">Link</a></li>
-		</ul>
-		
+		<!--<p>In developing this application, I utilized a toolkit consisting of Win XP, Cygwin 32-Bit (for development environment setup), OpenGL, OpenAL, and implemented the application using C++. This allowed me to develop the application to run on PC, Mac, and Linux platforms. One of the main challenges during the development process was incorporating elements from Atari ST, which required additional research and implementation. Through this process, I have learned valuable lessons about cross-platform development, integration of legacy technologies, and ensuring compatibility across different operating systems.</p>-->
 		
 		Installation Instructions Windows 11:
 
@@ -111,9 +150,32 @@
 			<li><a href="https://tetramatrix.github.io/typo3dreid/">56 Sprites! Atari ST Demo</a></li>
 		</ul>
 		
+		
+		Game Download:<br>
+
+		Latest:
+		<ul>
+			<li><a href="Demo.7z">Download for Windows 11</a></li>
+		</ul>
+		
+		Previous:
+		<ul>
+		<li><a href="Old_Demo.7z">Download for Windows 11</a></li>
+		<li><a href="Demo_WinXP.rar">Download for Windows XP</a></li>
+		</ul>
+
+		<br />
+		<br />
+		
+		Mirrors:	
+		<ul>
+			<li><a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">Itch.io</a></li>
+			<li><a href="https://read.cash/@Gigamegs/simple-old-school-retro-opengl-side-scroller-shmup-0a184b7d">Read.Cash</a></li>
+			<li><a href="https://gamejolt.com/p/in-the-future-the-aliens-are-about-to-conquer-the-earth-you-are-a-k4wf6tdq">Game Jolt</a></li>
+		</ul>
 
 		
-				Devlog:
+			Devlog:
 		<ul>
 			<li>03.03.25 Medium update: Bugfixes, much faster rendering, new beautiful, real-time, infinite background terrain system using procedurally generated triangle​, player sprite is on always on top</li>
 			<li>10.02.25 Medium update: Bugfixes, new weapon, new FX: aura, transparency, damage</li>
