@@ -88,6 +88,15 @@
 			    50% { opacity: 0.8; }
 			    100% { opacity: 1; }
 			}
+			.custom-bullet {
+            list-style: none; /* Remove default bullets */
+            padding: 0;
+       }
+
+      .custom-bullet li::before {
+          content: "📌 "; /* Add the custom bullet */
+          margin-right: 10px; /* Space between bullet and text */
+      }
 	</style>
 </head>
 <body>
@@ -161,15 +170,14 @@
 		<br />
 		💚 Game Download 💚:<br />
 
-		📌 Latest:
-		<ul>
-			<li><a href="Demo.7z">Download for Windows 11</a></li>
+		<ul class="custom-bullet">
+			<li><a href="Demo.7z">Latest: Windows 11</a></li>
 		</ul>
 		
 		📌 Previous:
 		<ul>
-		<li><a href="Old_Demo.7z">Download for Windows 11</a></li>
-		<li><a href="Demo_WinXP.rar">Download for Windows XP</a></li>
+			<li><a href="Old_Demo.7z">Download for Windows 11</a></li>
+			<li><a href="Demo_WinXP.rar">Download for Windows XP</a></li>
 		</ul>
 	
 		📌 Mirrors:	
