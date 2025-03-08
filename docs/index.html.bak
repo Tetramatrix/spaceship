@@ -97,6 +97,15 @@
           content: "📌 "; /* Add the custom bullet */
           margin-right: 10px; /* Space between bullet and text */
       }
+      .star-bullet {
+            list-style: none; /* Remove default bullets */
+            padding: 0;
+       }
+
+      .star-bullet li::before {
+          content: "✨ "; /* Add the custom bullet */
+          margin-right: 10px; /* Space between bullet and text */
+      }
 	</style>
 </head>
 <body>
@@ -171,7 +180,7 @@
 		💚 Game Download 💚:<br />
 
 		<ul class="custom-bullet">
-			<li><a href="Demo.7z">Latest: Windows 11</a></li>
+			<li><a href="Demo.7z">Latest: Download for Windows 11</a></li>
 		</ul>
 		
 		📌 Previous:

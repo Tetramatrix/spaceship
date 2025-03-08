@@ -97,6 +97,15 @@
           content: "📌 "; /* Add the custom bullet */
           margin-right: 10px; /* Space between bullet and text */
       }
+      .star-bullet {
+            list-style: none; /* Remove default bullets */
+            padding: 0;
+       }
+
+      .star-bullet li::before {
+          content: "✨ "; /* Add the custom bullet */
+          margin-right: 10px; /* Space between bullet and text */
+      }
 	</style>
 </head>
 <body>
@@ -141,7 +150,7 @@
 		
 		<iframe width="347" height="195" src="https://www.youtube.com/embed/p4ric9f7EG8" title="Spaceship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-		<ul>
+		<ul class="star-bullet">
 			<li>GFX: Atari ST/Custom</li>
 			<li>Font: Atari ST</li>
 			<li>Music: Atari ST Chiptune</li>
