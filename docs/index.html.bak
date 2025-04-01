@@ -177,7 +177,7 @@
 			<li>FX: Atari ST/Custom</li>
 		</ul>
 
-<table><thead><tr><th></th><th>Units &amp;&nbsp;Upgrades</th></tr></thead><tbody><tr><td>Boss "Yellow Snake"</td><td><img title="Boss" alt="Boss" src="snake.png" loading="lazy"></td></tr><tr><td>Boss "Dragonlord"</td><td><img src="boss_dragon.png" loading="lazy"></td></tr><tr><td>Ships</td><td><img src="ships.png" loading="lazy"></td></tr><tr><td>Spacestation</td><td><img src="station.png" loading="lazy"></td></tr><tr><td>Energyshield</td><td><img src="energyshield.png" loading="lazy"></td></tr></tbody></table>
+<table><thead><tr><th></th><th>Units &amp;&nbsp;Upgrades</th></tr></thead><tbody><tr><td>Boss "Yellow Snake"</td><td><img title="Boss" alt="Boss" src="snake.png" width="200px" loading="lazy"></td></tr><tr><td>Boss "Dragonlord"</td><td><img src="boss_dragon.png" loading="lazy"></td></tr><tr><td>Ships</td><td><img src="ships.png" width="200px" loading="lazy"></td></tr><tr><td>Spacestation</td><td><img src="station.png" loading="lazy"></td></tr><tr><td>Energyshield</td><td><img src="energyshield.png" width="200px" loading="lazy"></td></tr></tbody></table>
 
 		
 		<!--<p>In developing this application, I utilized a toolkit consisting of Win XP, Cygwin 32-Bit (for development environment setup), OpenGL, OpenAL, and implemented the application using C++. This allowed me to develop the application to run on PC, Mac, and Linux platforms. One of the main challenges during the development process was incorporating elements from Atari ST, which required additional research and implementation. Through this process, I have learned valuable lessons about cross-platform development, integration of legacy technologies, and ensuring compatibility across different operating systems.</p>-->
