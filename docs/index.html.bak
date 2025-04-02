@@ -206,9 +206,10 @@
 
 		<ul class="custom-bullet">
 			<li><a href="Demo.7z">Latest: Download for Windows 11 (64-Bit)</a></li>
-		</ul>< br />
+		</ul>
 		
-		 [ MD5 Hashf66a0274a89ff6219cd09283bd70fcf9 ]
+		
+		 <br /> [ MD5 Hashf66a0274a89ff6219cd09283bd70fcf9 ] <br />
 		
 		📌 Previous:
 		<ul>
@@ -240,7 +241,7 @@
 		
 		✨	Devlog:
 		<ul>
-			<li>01.04.25 Major update: 64-Bit, 2x New Boss Units, 1x Station Unit, New Shield Upgrade, New BG Gfx Infinite Space String</li>
+			<li>01.04.25 Major update: 64-Bit, 2x New Boss Units, 1x Station Unit, New Shield Upgrade, New BG Gfx Infinite Cosmic Space String</li>
 			<li>03.03.25 Medium update: Bugfixes, much faster rendering, new beautiful, real-time, infinite background terrain system using procedurally generated triangle​, player sprite is always on top</li>
 			<li>10.02.25 Medium update: Bugfixes, new weapon, new FX: aura, transparency, damage</li>
 			<li>21.01.25 Medium update: Bugfixes, new enemy, new weapons & bullet patterns</li>
