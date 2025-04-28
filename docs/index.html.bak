@@ -165,6 +165,7 @@
 		<br />
 		
 <iframe width="347" height="195" src="https://www.youtube.com/embed/lqruQp5Ph4Y" title="Spaceship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 		<br />
   	<img src="game_snake.png" width="320" />
    	<img src="game_shield1.png" width="320" />
@@ -246,6 +247,7 @@
 				
 		📌 Previous:
 		<ul>
+			<li><a href="250428_Demo.7z"> Download for Windows 11 (64-Bit)</a> [ MD5 Hash f66a0274a89ff6219cd09283bd70fcf9 ] </li>
 			<li><a href="250124_Demo.7z">Download for Windows 11 32-Bit</a></li>
 			<li><a href="Old_Demo.7z">Download for Windows 11</a></li>
 			<li><a href="Demo_WinXP.rar">Download for Windows XP</a></li>
@@ -274,6 +276,7 @@
 		
 		✨	Devlog:
 		<ul>
+			<li>28.04.25 Major update: general Bug fixes, improved Stage & GFX, new BG GFX: Infinite Cosmic Space String v2, new GFX: Nebula, new GFX: procedurally generated Platform, 1x new weapon, faster rendering, Shader GFX.</li>
 			<li>01.04.25 Major update: 64-Bit, 2x New Boss Units, 1x Station Unit, New Shield Upgrade, New BG Gfx Infinite Cosmic Space String</li>
 			<li>03.03.25 Medium update: Bugfixes, much faster rendering, new beautiful, real-time, infinite background terrain system using procedurally generated triangle​, player sprite is always on top</li>
 			<li>10.02.25 Medium update: Bugfixes, new weapon, new FX: aura, transparency, damage</li>
