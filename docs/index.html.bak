@@ -242,11 +242,12 @@
 		💚 Game Download 💚:<br />
 
 		<ul class="custom-bullet">
-			<li><a href="Demo.7z">Latest: Download for Windows 11 (64-Bit)</a> [ MD5 Hash  ] </li>
+			<li><a href="Demo.7z">Latest: Download for Windows 11 (64-Bit)</a> [ MD5 Hash 5b5cf5c50bfb7042fa325a1de28f415d ] </li>
 		</ul>
 				
 		📌 Previous:
 		<ul>
+			<li><a href="250525_Demo.7z">Latest: Download for Windows 11 (64-Bit)</a> [ MD5 Hash 5b5cf5c50bfb7042fa325a1de28f415d ] </li>
 			<li><a href="250516_Demo.7z">Download for Windows 11 (64-Bit)</a> [ MD5 Hash 519883406502d1c1febe543c0f7d9a48 ] </li>
 			<li><a href="250509_Demo.7z">Download for Windows 11 (64-Bit)</a> [ MD5 Hash fbd8d2be12dbc4b20dd85ea94de592e4 ] </li>
 			<li><a href="250428_Demo.7z"> Download for Windows 11 (64-Bit)</a> [ MD5 Hash f66a0274a89ff6219cd09283bd70fcf9 ] </li>
@@ -278,7 +279,9 @@
 		
 		✨	Devlog:
 		<ul>
-			<li>11.05.25 Medium update:  general Bug fixes, new bullets CGI/GFX with Shaders</li>
+			<li>25.05.25 Medium Update: General bug fixes, new Map CGI/GFX, faster physics​​</li>
+			<li>16.05.25 Medium Update: General bug fixes, new explosion CGI/GFX, updated exhaust trail CGI/GFX, and fixed bullet sound.</li>
+			<li>11.05.25 Medium update: general Bug fixes, new bullets CGI/GFX with Shaders</li>
 			<li>28.04.25 Major update: general Bug fixes, improved Stage & GFX, new BG GFX: Infinite Cosmic Space String v2, new GFX: Nebula, new GFX: procedurally generated floating platforms (pathways), 1x new weapon, faster rendering, Shader GFX.</li>
 			<li>01.04.25 Major update: 64-Bit, 2x New Boss Units, 1x Station Unit, New Shield Upgrade, New BG Gfx Infinite Cosmic Space String</li>
 			<li>03.03.25 Medium update: Bugfixes, much faster rendering, new beautiful, real-time, infinite background terrain system using procedurally generated triangle​, player sprite is always on top</li>
